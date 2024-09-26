@@ -16,6 +16,7 @@ public class Troll extends Monster implements Bleedable, Poisonable{
     }
     @Override
     public double attack(){
+        System.out.println("Troll attacking");
         return getDamage()+ poison()+ bleed();
     }
 }
